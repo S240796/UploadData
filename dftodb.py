@@ -11,3 +11,5 @@ def CreateTable(path,tname):
     engine = create_engine(f'mysql+pymysql://{username}:{password}@{host}/{database}')
     table_name = tname
     df.to_sql(name=table_name, con=engine, if_exists='replace', index=False)
+
+
